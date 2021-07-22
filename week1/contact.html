@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60px;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="images/chankana.png" alt="logo">
+
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  <div class="contact-form">
+    <form method="post" action="welcome.html" name="form" id="form">
+      <div class="contact">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Enter your Name"> <span class="error"><p id="name_error"></p></span>
+      </div>
+
+      <div class="contact">
+        <label for="name">Email: </label>
+        <input type="text" id="email" name="email" placeholder="Enter your Email"> <span class="error"><p id="email_error"></p></span>
+      </div>
+
+      <div class="contact">
+        <label for="name">Subject: </label>
+        <input type="text" id="subject" name="subject" aria-describedby="subject-format" placeholder="Enter your Subject"> <span class="error"><p id="subject_error"></p></span>
+      </div>
+
+      <div class="contact">
+        <label for="name">Message: </label>
+        <input type="text" id="message" name="message" aria-describedby="message-format" placeholder="Enter your Message"> <span class="error"><p id="message_error"></p></span>
+      </div>
+
+        <button class="btn" type="submit" value="submit">Submit</button>
+
+      </form>
+    </div>
+
+    <p style="left: 0;bottom: 0;width: 100%;color: black;font-size: 10px;text-align: center;">© 2021 Nicolas Andres Tomas</p>
+
+    <script src="form.js"></script>
+  </body>
+</html>
