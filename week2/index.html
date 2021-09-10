@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title> <!-- page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- linked to styles.css -->
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png" alt="logo"> <!-- page logo "logo.png" classed as "logo" linked to styles.css-->
+
+    <ul class="nav"> <!-- naviagtion list -->
+      <li class="page"><a href="index.html">Home</a></li> <!-- index.html link -->
+    </ul>
+
+    <h2>Task 1 – Understand about responsive web Pages and apps </h2>
+
+    <h4><a class="site" href="https://www.clairegingell.com/">SITE 1</a></h4>
+
+    <p>The site shown within the link "SITE 1" - shares an identical responsive web design when compared between the mobile and desktop. This site contains a set viewport meta which scales the size of the website through different devices, shown below is an image that is taken on an iPhone XR. As you can see the website is positioned to fit within the screen of the device along with other sections such as the images, paragraphs, and menu.</p>
+
+    <img src="images/website1.jpg" alt="site1">
+
+    <img src="images/mobilesite1.jpg" alt="site1">
+
+    <h4><a class="site" href="https://www.artsyasha.com/">SITE 2</a></h4>
+
+    <p>The site shown within the link "SITE 2" - is somewhat differential when compared to both mobile and desktop devices. As this responsive web design is
+    also set as a viewport meta, sections within the mobile device seem to position in a clustored form due to scaling and sizing although all sections
+    manahge to fit within the spaces of both devices.</p>
+
+    <img src="images/website2.jpg" alt="site2">
+
+    <img src="images/mobilesite2.jpg" alt="site2">
+
+    <h2>Task 2 – CSS and Improve your web page</h2>
+
+    <p>The site shown within the link "SITE 2" - is somewhat differential when compared to both mobile and desktop devices. As this responsive web design is also set as a viewport meta, sections within the mobile device seem to position in a clustered form due to scaling and sizing although all sections manage to fit within the spaces of both devices.</p>
+
+    <h2>Task 3 – User stories and UI/UX design for your project</h2>
+
+    <h4>USER STORY 1</h4>
+
+    <table>
+      <tr>
+        <th>Statement</th>
+        <th>Acceptance Criteria</th>
+        <th>Estimation</th>
+        <th>Priority</th>
+      </tr>
+      <tr>
+        <td>As a user, I want the app to notify me on the latest updates made within the website.</td>
+        <td>1. Once user opens app, a prompt will display giving an option whether to turn notifications on or off.
+        <br><br>2. User can manually enable or disable notifications through their Settings on the device.</td>
+        <td>According to the planning poker estimate approach this can be considered as <strong>Story Points: 8</strong></td>
+        <td><strong>Priority: 1</strong>
+        <br>High Priority</td>
+      </tr>
+    </table>
+
+    <h4>USER STORY 2</h4>
+
+    <table>
+      <tr>
+        <th>Statement</th>
+        <th>Acceptance Criteria</th>
+        <th>Estimation</th>
+        <th>Priority</th>
+      </tr>
+      <tr>
+        <td>As a user, I want to be able to download images within the application.</td>
+        <td>1. Once user selects photo.
+        <br><br>2. User can touch down on the screen giving an option to Save Image.
+        <br><br>3. User should download image into their gallery.</td>
+        <td>According to the planning poker estimate approach this can be considered as <strong>Story Points: 8</strong></td>
+        <td><strong>Priority: 2</strong>
+        <br>Medium Priority</td>
+      </tr>
+    </table>
+
+    <h4>USER STORY 3</h4>
+
+    <table>
+      <tr>
+        <th>Statement</th>
+        <th>Acceptance Criteria</th>
+        <th>Estimation</th>
+        <th>Priority</th>
+      </tr>
+      <tr>
+        <td>As a user, I want the app to be able to have a constant functional look and interaction throughout all platforms.</td>
+        <td>1. Application should be constant for all platforms and devices.</td>
+        <td>According to the planning poker estimate approach this can be considered as <strong>Story Points: 5</strong></td>
+        <td><strong>Priority: 1</strong> High Priority</td>
+      </tr>
+    </table>
+
+    <h2>Task 4 - Use graphics, media and API’s </h2>
+
+    <h4>EXAMPLE 1</h4>
+
+    <iframe class="vid" width="420" height="315" src="https://www.youtube.com/embed/4ZDpgaRUedY"></iframe>
+
+    <h4>EXAMPLE 2</h4>
+
+    <p>Click the button to get geolocation.</p>
+
+    <div class="ex">
+        <button onclick="getLocation()">Click me</button>
+    </div>
+
+    <p id="example4-2"></p>
+
+    <script>
+    var x = document.getElementById("example4-2");
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+
+    <script src="vue.js"></script>  <!-- linked to scripts.js -->
+  </body>
+</html>
