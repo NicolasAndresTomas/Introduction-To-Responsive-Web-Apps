@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title> <!-- page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- linked to styles.css -->
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png" alt="logo"> <!-- page logo "logo.png" classed as "logo" linked to styles.css-->
+
+    <ul> <!-- naviagtion list -->
+      <li><a href="index.html">Home</a></li> <!-- index.html link -->
+    </ul>
+
+    <h2>Task 1 – Using V-model for handling user inputs</h2>
+
+    <form class="ex" id="example1-1">
+      <h3>Form User</h3>
+      <label for="name">Name:</label><br>
+      <input id="name" type="text" placeholder="Enter name"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input id="password" type="password" placeholder="Enter password"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input id="email" type="text" placeholder="Enter email"><br><br>
+
+      <button v-on:click="checkInput">Submit</button>
+    </form>
+
+    <h2>Task 2 – Checkbox  in your project</h2>
+
+    <div class="ex" id="example2-1">
+      <input type="checkbox" id="artsize1" value="1920x1080 px" v-model="checkedDimensions" />
+      <label for="artsize1">1920x1080 px</label>
+      <input type="checkbox" id="artsize2" value="1280x720 px" v-model="checkedDimensions" />
+      <label for="artsize2">1280x720 px</label>
+      <input type="checkbox" id="artsize3" value="1080x1080 px" v-model="checkedDimensions" />
+      <label for="artsize3">1080x1080 px</label>
+      <br />
+      <span>Checked dimensions: {{ checkedDimensions }}</span>
+    </div>
+
+    <h2>Task 3 – Dynamic options rendering v-for</h2>
+
+    <div class="ex" id="example3-1">
+      <select v-model="selected">
+        <option v-for="option in options" v-bind:value="option.value">
+          {{ option.text }}
+        </option>
+      </select>
+      <span>Selected: {{ selected }}</span>
+  </div>
+
+  <h2>Task 4 – Using Modifiers in your project</h2>
+
+  <form class="ex" id="example4-1">
+    <h3>Form User</h3>
+    <label for="name">Name:</label><br>
+    <input id="name" type="text" v-model.lazy="username" placeholder="Enter name"><br><br>
+    <p>Username: {{ username }}</p><br><br>
+
+    <label for="password">Password:</label><br>
+    <input id="password" type="password" v.model="pasword" placeholder="Enter password"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input id="email" type="text" v.model="email" placeholder="Enter email"><br><br>
+
+    <button v-on:click="checkInput">Submit</button>
+  </form>
+
+  <h4>1. Do you want to use lazy modifiers to sync after change events? Think and Discuss with peers</h4>
+
+  <p>For the most case a v-model will sync the input during an input event, although adding in a lazy modifier is an alterantive than syncing after change events</p>
+
+  <h4>2. Do you need to trim whitespace from user inputs automatically?</h4>
+
+  <p>It is an optional choice for a user input to be trimmed automatically, though it benifits the v-model to manage inputs</p>
+
+  <h4>3. What about automatic typecasting? Will that be useful for your project?</h4>
+
+  <p>It will be useful to an extent, depending whether you want the user input to be an automatic typecast as a number</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="vue.js"></script>  <!-- linked to scripts.js -->
+  </body>
+</html>
