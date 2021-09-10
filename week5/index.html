@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title> <!-- page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- linked to styles.css -->
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png" alt="logo"> <!-- page logo "logo.png" classed as "logo" linked to styles.css-->
+
+    <ul> <!-- naviagtion list -->
+      <li><a href="index.html">Home</a></li> <!-- index.html link -->
+    </ul>
+
+    <h2>Task 1 – Learn Composing with Components</h2>
+
+    <div class="ex" id="example1-1">
+      <ol>
+        <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+      </ol>
+    </div>
+
+    <h2>Task 2 – Exploring Vue Framework</h2>
+
+    <h4>EXAMPLE 1</h4>
+
+    <div class="ex" id="example2-1">
+       <heading-component></heading-component>
+    </div>
+
+    <h4>EXAMPLE 2</h4>
+
+    <div class="ex" id="example2-2">
+      <art-name>Title</art-name>
+    </div>
+
+    <h2>Task 3 – Understanding  Handling user input</h2>
+
+    <h4>EXAMPLE 1</h4>
+
+    <div class="ex" id="example3-1">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <h4>EXAMPLE 2</h4>
+
+    <div class="ex" id="example3-2">
+      <p>{{ message }}</p>
+      <input v-model="message">
+    </div>
+
+    <h2>Task 4 – Learn Components In-Depth</h2>
+
+    <h4>Component Registration</h4>
+
+    <p>Component registration is referred when a name is assigned to a component that can be carried out when called to a specified location within the program. </p>
+
+    <h4>Props</h4>
+
+    <p>Props are prone to be used as attributes that are accustomed for registration to an existing component – for instance, when a prop is set on execution the prop/property is served to that component.</p>
+
+    <h4>Custom Events</h4>
+
+    <p>A custom event is a key modifier which manipulates event handlings from the user when applied.</p>
+
+    <h4>Slots</h4>
+
+    <p>Slots is a element that is implemented to allow the user to compose new components from content outlets.</p>
+
+    <h4>Dynamic & Async Components</h4>
+
+    <p>Dynamic components are used to switch between various components through using a tab-based interface, whereas Async components divide an app into smaller quantities – meaning that a component will be called by a server individually.</p>
+
+    <h4>Handling Edge Cases</h4>
+
+    <p>Handling edge cases is implemented when a user wants to receive access to other existing components or take control over manipulating DOM elements, handling edge cases can have consequences to the program though it is efficiently useful if implemented correctly.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="vue.js"></script>  <!-- linked to scripts.js -->
+  </body>
+</html>

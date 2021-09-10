@@ -1,0 +1,1 @@
+For this week’s tasks we’ve continued from our previous week, as we have learnt more concepts of the Vue framework. This week we’ve understood more and have adapted to develop more skills related upon components and explored their functional uses for our responsive pages.
