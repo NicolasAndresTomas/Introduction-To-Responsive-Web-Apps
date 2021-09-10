@@ -1,0 +1,1 @@
+For this week’s tasks we’ve covered the standard basics in learning different concepts of JavaScript. I’ve obtained a grasp on how to implement this programming language within my website, along with understanding the definitions of concepts/components from Vue. This week’s activities were mainly focused upon learning java, as I have understood the overview of all 4 tasks.
