@@ -1,0 +1,1 @@
+For this week’s tasks we’ve covered the standard basics in learning different concepts of the Vue framework. We’ve learnt a brief portion based on the Vue framework, though were now going more in depth about understanding the concepts in implementing Vue – such as different components in-depth.

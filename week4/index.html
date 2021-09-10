@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title> <!-- page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- linked to styles.css -->
+  </head>
+  <body>
+    <img class="logo" src="images/logo.png" alt="logo"> <!-- page logo "logo.png" classed as "logo" linked to styles.css-->
+
+    <ul> <!-- naviagtion list -->
+      <li><a href="index.html">Home</a></li> <!-- index.html link -->
+    </ul>
+
+    <h2>Task 1 – Declarative Rendering</h2>
+
+    <h4>EXAMPLE 1</h4>
+
+    <div class="ex" id="example1-1">
+      {{ message }}
+    </div>
+
+    <h4>EXAMPLE 2</h4>
+
+    <div class="ex" id="example1-2">
+      <p>{{ message }}</p>
+      <input v-model="message">
+    </div>
+
+    <h2>Task 2 - Conditionals and Loops</h2>
+
+    <h4>EXAMPLE 1</h4>
+
+    <div class="ex" id="example2-1">
+      <span v-if="seen">The condition is true, which makes this text seen.</span>
+    </div>
+
+    <h4>EXAMPLE 2</h4>
+
+    <div class="ex" id="example2-2">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+
+    <h2>Task 3 - Discuss your proposal with tutor and peers</h2>
+
+    <h4>NOTES</h4>
+
+    <div class="ex">
+      <p>Ill have to implement vue components that'll suit my web design, also it is important to take note on user stories as they could help inflict in getting ideas that would improve my website.</p>
+      <p>Its critical to also develop a UX design to interpret the inteface on other devices, as this will put together the propsal for the final outcome.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="vue.js"></script>  <!-- linked to scripts.js -->
+  </body>
+</html>
