@@ -1,1 +1,0 @@
-For this week’s tasks we’ve continued from our previous weeks 4, 5, and 6 – we’ve now obtained enough knowledge of the Vue framework, as now we can implement all of our abilities to our proposed project. This week we gained an insight on more components with such as registration, props, custom events, and dynamic/async.
