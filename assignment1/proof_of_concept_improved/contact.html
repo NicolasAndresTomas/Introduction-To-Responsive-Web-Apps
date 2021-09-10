@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title> <!-- page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- linked to styles.css -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <img class="logo" src="images/chankana.png" alt="logo"> <!-- page logo "chankana.png" classed as "logo" linked to styles.css-->
+
+    <ul> <!-- naviagtion list -->
+      <li><a href="home.html">Home</a></li> <!-- home.html link -->
+      <li><a href="contact.html">Contact</a></li> <!-- contact.html link -->
+      <li><a href="about.html">About</a></li> <!-- about.html link -->
+    </ul>
+
+  <div class="contact-form"> <!-- div tag, classed as "contact-form" linked to styles.css -->
+    <form method="post" name="form" id="form"> <!-- form -->
+      <div class="contact"> <!-- div tag classed as "contact" linked to styles.css -->
+        <label for="name">Name: </label> <!-- label "Name: " for form -->
+        <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Enter your Name"> <span class="error"><p id="name_error"></p></span> <!-- input "name" for form -->
+      </div>
+
+      <div class="contact"> <!-- div tag "contact" linked to styles.css -->
+        <label for="name">Email: </label> <!-- label "Email: " for form -->
+        <input type="text" id="email" name="email" placeholder="Enter your Email"> <span class="error"><p id="email_error"></p></span> <!-- input "email" for form -->
+      </div>
+
+      <div class="contact"> <!-- div tag "contact" linked to styles.css -->
+        <label for="name">Subject: </label> <!-- label "Subject: " for form -->
+        <input type="text" id="subject" name="subject" aria-describedby="subject-format" placeholder="Enter your Subject"> <span class="error"><p id="subject_error"></p></span> <!-- input "subject" for form -->
+      </div>
+
+      <div class="contact"> <!-- div tag "contact" linked to styles.css -->
+        <label for="name">Message: </label> <!-- label "Message: " for form -->
+        <input type="text" id="message" name="message" aria-describedby="message-format" placeholder="Enter your Message"> <span class="error"><p id="message_error"></p></span> <!-- input "message" for form -->
+      </div>
+
+      <div id="prompt">  <!-- submit-1 is the event handler from vue.js - containing an inline handler within -->
+        <button v-on:click="say('You have clicked on the submit button')" class="btn" type="submit" value="submit">Submit</button> <!-- button for form classed as "btn" linked to styles.css -->
+      </div>
+      </form>
+    </div>
+
+    <p class="footer">© 2021 - Nicolas Andres Tomas, 221351413</p> <!-- footer classed as "footer" linked to styles.css -->
+
+    <script src="form.js"></script> <!-- linked to javascript -->
+    <script src="vue.js"></script> <!-- linked to javascript -->
+  </body>
+</html>

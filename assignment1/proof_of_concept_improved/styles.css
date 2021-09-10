@@ -1,0 +1,173 @@
+body {  /* body style */
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.logo { /* class "logo" style */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    padding: 30px;
+}
+
+ul { /* unordered list style */
+    background-color: black;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+li { /* list item style */
+    display:inline;
+}
+
+a { /* hyperlink style */
+    display:inline-block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+img { /* image style */
+    display: block;
+    padding: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+}
+
+p {  /* paragraph */
+  width: 50%;
+  color: black;
+  font-size: 13px;
+  text-align:center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border: 3px;
+  margin: auto;
+}
+
+.contact-form { /* class "contact-form" style */
+    display: block;
+    padding: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-form h1 { /* class "contact-form" heading 1 style */
+    margin-top: 0;
+    font-weight: 200;
+}
+
+.contact { /* class "contact" style */
+    border:1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+}
+
+.contact label { /* class "contact" label style */
+    display: block;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.contact input, .contact textarea { /* class "contact" input and text area style */
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.btn { /* class "btn" style */
+    width: 100%;
+    border: none;
+    background: black;
+    font-size: 15px;
+    margin-top: 8px;
+    display: inline-block;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+h2 { /* h2 style */
+    text-align: center;
+}
+
+.footer { /* class "footer" style */
+    width: 100%;
+    color: black;
+    font-size: 10px;
+    text-align:center;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.column {
+  float: left;
+  width: 32.6%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.demo1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 67%;
+  right: 0;
+  top: 95%;
+  text-align: center;
+  width: 10%;
+}
+
+.demo2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 95%;
+  text-align: center;
+  width: 10%;
+}
+
+.demo3 {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 67%;
+  top: 95%;
+  text-align: center;
+  width: 10%;
+}
+
+.title {
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  text-align:center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.sentence {
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  margin: 25%  ;
+}
