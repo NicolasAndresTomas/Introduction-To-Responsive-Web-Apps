@@ -1,1 +1,0 @@
-For this week’s tasks we covered to gain experience in learning how to implement HTML, CSS, and JavaScript within our web applications, understanding the knowledge of basic programming methods was able to cast skills for future development tasks.
